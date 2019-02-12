@@ -192,7 +192,7 @@ class Replay(Game):
                 pygame.draw.circle(self.screen, (255, 255, 0), traj_coordinates[i], 3, 3)
 
             x = dwa.motion(x, u, self.dwa_config.dt)
-            self.record_data = True
+            self.record_data = False
             if self.record_data is True:
                 write_data(os.path.join(os.path.dirname(__file__), "resources", "dwa_data", "dwa_path.csv"), x[0], x[1],
                            -dwa.rad2deg(x[2]))

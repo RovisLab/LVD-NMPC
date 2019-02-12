@@ -41,10 +41,10 @@ class Config:
         self.max_yawrate = 40.0 * math.pi / 180.0  # [rad/s]
         self.max_accel = 0.3  # [m/ss]
         self.max_dyawrate = 40.0 * math.pi / 180.0  # [rad/ss]
-        self.v_reso = 0.1  # [m/s]
-        self.yawrate_reso = 0.1 * math.pi / 180.0  # [rad/s]
+        self.v_reso = 0.5  # [m/s]
+        self.yawrate_reso = 0.5 * math.pi / 180.0  # [rad/s]
         self.dt = 0.1  # [s]
-        self.predict_time = 2.8  # [s]
+        self.predict_time = 2.1  # [s]
         self.to_goal_cost_gain = 1.0
         # self.ref_trajectory_cost_gain = 1.0
         self.speed_cost_gain = 1.0

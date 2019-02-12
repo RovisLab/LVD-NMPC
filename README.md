@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ### Running the code
 
-Each of the algorithms has a main function inside its own script, where a few parameters which can be modified in order to run it. 
+Each of the algorithms has a main function inside its own script, where a few parameters can be modified in order to run it. 
 They all run inside GridSim, which is an autonomous driving simulator engine that uses a car-like robot architecture to generate occupancy grids from simulated sensors.
 
 #### Neuro-evolution
@@ -46,6 +46,8 @@ The script is:
 car_kinematic_replay_dwa.py
 ```
 
+This script will run the dynamic window approach, which performs the local path planning given the obstacles from the sensor. It will run in the Stockholm city scenario.
+The parameters which can be modified are inside *dynamic_window_approach.py*. 
 
 #### Deep Q Network
 
