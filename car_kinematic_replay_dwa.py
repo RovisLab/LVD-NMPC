@@ -1,6 +1,5 @@
 import pygame
 import pygame.gfxdraw
-from read_write_trajectory import read_coords
 from car_kinematic_model import Car, Game
 import dynamic_window_approach
 from car_kinematic_obstacle import update_object_mask

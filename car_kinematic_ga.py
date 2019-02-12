@@ -281,7 +281,7 @@ if __name__ == "__main__":
         neuro_trainer = NeuroTrainer(nr_population, nr_generations, agent.initInd)
         neuro_trainer.train(agent.neuro_eval)
     else:
-        agent.load_model("model_acclr_elite")
+        agent.load_model("model_elite")
         screen = pygame.display.set_mode((1280, 720))
         game = GAGame(screen, 1280, 720)
         game.run_ga(agent.model)
