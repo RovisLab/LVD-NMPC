@@ -139,7 +139,6 @@ class GAGame(Game):
             myfont = pygame.font.SysFont('Arial', 30)
             text = myfont.render('Car velocity: ' + str(round(car.velocity[0], 2)), True, (255, 0, 255))
             self.screen.blit(text, (20, 20))
-            write_data("D:/test_position_writing.csv", car.position, car.angle)
             pygame.display.update()
 
             next_position = car.position[0], car.position[1]
@@ -272,15 +271,17 @@ class KinematicGA(object):
 
 
 if __name__ == "__main__":
-    no_population = 20
-    no_generations = 50
+    nr_population = 20
+    nr_generations = 50
     agent = KinematicGA(31, 8)
 
-    # neuro_trainer = NeuroTrainer(no_population, no_generations, agent.initInd)
-    # neuro_trainer.train(agent.neuro_eval)
+    train_ga = True
 
-    # # test seamless
-    agent.load_model("model_2000")
-    screen = pygame.display.set_mode((1280, 720))
-    game = GAGame(screen, 1280, 720)
-    game.run_ga(agent.model)
+    if train_ga is True:
+        neuro_trainer = NeuroTrainer(nr_population, nr_generations, agent.initInd)
+        neuro_trainer.train(agent.neuro_eval)
+    else:
+        agent.load_model("model_acclr_elite")
+        screen = pygame.display.set_mode((1280, 720))
+        game = GAGame(screen, 1280, 720)
+        game.run_ga(agent.model)
