@@ -124,3 +124,5 @@ class ConvDQNAgent:
     def load_memory(self, name):
         filehandler = open(name + "-memory.pkl", 'rb')
         self.memory = pickle.load(filehandler)
+
+		

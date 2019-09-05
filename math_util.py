@@ -34,3 +34,4 @@ def get_arc_points(center, radius, theta0, theta1, nr_rays=25):
     #print("Length of points", points.__len__())
 
     return points
+	

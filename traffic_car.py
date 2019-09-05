@@ -41,4 +41,3 @@ class TrafficCar(Car):
                 screen.blit(rotated, (x, y))
                 object_mask.blit(obj_rotated, (x, y))
         self.index = (self.index + 1) % len(self.data)
-

@@ -429,3 +429,5 @@ if __name__ == '__main__':
     screen = pygame.display.set_mode((1280, 720))
     game = Game(screen=screen, screen_width=1280, screen_height=720, record_data=True, traffic=True)
     game.run()
+
+	

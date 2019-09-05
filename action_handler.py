@@ -44,3 +44,4 @@ def apply_action(predicted_action, car, dt):
     else:
         car.steering = 0
     car.steering = max(-car.max_steering, min(car.steering, car.max_steering))
+	

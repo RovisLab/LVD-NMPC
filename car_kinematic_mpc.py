@@ -188,3 +188,5 @@ if __name__ == "__main__":
     screen = pygame.display.set_mode((1280, 720))
     mpc = MPCGame(screen, 1280, 720)
     mpc.run_mpc()
+
+	

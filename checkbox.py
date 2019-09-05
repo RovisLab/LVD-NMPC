@@ -49,3 +49,5 @@ class Checkbox():
 
 	def getY(self):
 		return self.checkboxRect.y
+
+		

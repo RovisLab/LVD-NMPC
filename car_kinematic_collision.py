@@ -19,3 +19,5 @@ class Collision:
         rotated_x = center_rect[0] + int((x - ox) * cos(radians(-car.angle))) + int((y - oy) * sin(radians(-car.angle)))
         rotated_y = center_rect[1] + int((x - ox) * sin(radians(-car.angle))) - int((y - oy) * cos(radians(-car.angle)))
         return rotated_x, rotated_y
+
+		

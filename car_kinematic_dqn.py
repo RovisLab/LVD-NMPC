@@ -247,3 +247,5 @@ if __name__ == '__main__':
     episodes = 100000
     game.run_conv_dqn(episodes)
     # game.predict_conv_dqn()
+
+	

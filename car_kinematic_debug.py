@@ -12,3 +12,5 @@ class Debug:
         myfont = pygame.font.SysFont('Comic Sans MS', 30)
         text = myfont.render(input, False, (255, 0, 255))
         screen.blit(text, (30, 30))
+
+		

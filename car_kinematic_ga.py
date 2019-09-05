@@ -285,3 +285,5 @@ if __name__ == "__main__":
         screen = pygame.display.set_mode((1280, 720))
         game = GAGame(screen, 1280, 720)
         game.run_ga(agent.model)
+
+		

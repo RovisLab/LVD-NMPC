@@ -560,5 +560,3 @@ def update_object_mask(object_mask, rel_x, rel_y, bgWidth , bgHeight,
         if p1 is not None:
             pygame.draw.rect(object_mask, (255, 255, 0), car_rect)
 
-
-

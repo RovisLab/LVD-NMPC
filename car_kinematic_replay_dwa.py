@@ -222,4 +222,3 @@ if __name__ == '__main__':
     game = Game(screen, 1280, 720)
     replay = Replay(game.screen, game.screen_width, game.screen_height)
     replay.replay_mode()
-
