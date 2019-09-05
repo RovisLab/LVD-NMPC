@@ -1,10 +1,10 @@
-# DL-B-NMPC: Deep Learning-based Behavioral Nonlinear Model Predictive Control for Autonomous Vehicles
+# LVD-NMPC: Learning-based Vision Dynamics Nonlinear Model Predictive Control for Autonomous Vehicles
 
-This repository accompanies the *DL-B-NMPC: Deep Learning-based Behavioral Nonlinear Model Predictive Control for Autonomous Vehicles* paper.
+This repository accompanies the *LVD-NMPC: A Learning-based Vision Dynamics Approach to Nonlinear Model Predictive Control for Autonomous Vehicles* paper.
 
-DL-B-NMPC uses an *a-priori* process model in combination with behavioral and disturbance models. The models are responsible for estimating the controlled system's desired state trajectory for different operating conditions, acting as input to a constrained NMPC. We propose to encode both models within the layers of a deep neural network, which acts as a nonlinear approximator for the high order state-space of the operating conditions. The input is based on historical sequences of system states and observations, integrated by an Augmented Memory component. We use Inverse Reinforcement Learning and the Bellman optimality principle to train our learning controller with a modified version of the Deep Q-Learning algorithm, enabling us to estimate the desired state trajectory as an optimal action-value function.
+LVD-NMPC uses a vision dynamics model in combination with an a-priori process model. The vision dynamics model is used to estimate the dynamics of the driving scene, the controlled system's desired state trajectory and the weighting gains of the quadratic cost function optimized by a constrained NMPC. We propose to encode the vision model within the layers of a deep neural network, which acts as a nonlinear approximator for the high order state-space of the operating conditions. The input is based on historic sequences of system states and observations, integrated by an Augmented Memory component. We train our learning controller with a modified version of the Deep Q-Learning algorithm, enabling us to estimate the visual dynamics as an optimal action-value function of the desired state trajectory. We evaluate LVD-NMPC against a baseline Dynamic Window Approach (DWA) path planning executed using standard NMPC, as well as against the PilotNet neural network. Performance is measured in our simulation environment GridSim, on a real-world 1:8 scaled model car, as well as on a real size autonomous test vehicle.
 
-![Alt text](images/dl_b_nmpc_block_diagram.png?raw=true)
+![Alt text](images/lvd_nmpc_block_diagram.png?raw=true)
 
 ## Installation
 
@@ -14,7 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Clone the repository:
 ```bash
-$ git clone https://github.com/RovisLab/DL-B-NMPC.git
+$ git clone https://github.com/RovisLab/LVD-NMPC.git
 ```
 
 The packages needed for install can be found inside requirements.txt: 
