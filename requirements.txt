@@ -4,5 +4,5 @@ Pillow
 opencv-python
 sympy
 matplotlib
-tensorflow==1.12.0
+tensorflow==1.15.2
 keras==2.1.0
